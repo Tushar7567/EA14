@@ -28,6 +28,6 @@
 .p2{
     text-decoration: underline;
 }
-.ul li{
-    letter-spacing: 6px;
+ul li{
+    letter-spacing: 3px;
 }
