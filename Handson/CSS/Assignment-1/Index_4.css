@@ -1,0 +1,30 @@
+.head{
+    font-size: larger;
+    color:red
+    
+}
+.size{
+    font-size: xx-large;
+}
+.text{
+    color:maroon
+}
+.mark{
+    background-color: yellow;
+}
+.font{
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.ital{
+    font-style: italic;
+}
+.bold{
+    font-weight: 550;   
+}
+.p1{
+    text-decoration: line-through;
+}
+.p2{
+    text-decoration: underline;
+}
