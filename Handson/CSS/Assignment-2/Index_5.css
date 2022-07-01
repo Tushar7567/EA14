@@ -1,0 +1,203 @@
+.body{
+    border: 10px;
+    border-color: lightgreen;
+    border-style:groove;
+    margin: 0;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(./img.jpeg)
+    
+
+}
+.head{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.one{
+    display: flex;
+    border: 5px solid red;
+    font-size: x-large;
+    text-align:start;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    font-style: italic;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+
+}
+.two{
+    display: flex;
+    border: 5px solid red;
+    font-size: x-large;
+    text-align:center;
+    font-style: italic;
+    height: fit-content;
+    padding: 20px 40px 5px 60px;
+    margin-top: 30px;
+    margin-left: -150px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+.three{
+    display: flex;
+    border: 5px solid red;
+    font-size:larger;
+    text-align:center;
+    font-style: italic;
+    height: fit-content;
+    padding: 20px 80px 5px 60px;
+    margin-top: -130px;
+    margin-left: 890px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+.body2{
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+.four{
+    display: flex;
+    border: 6px dashed red;
+    color: red;
+    text-align: center;
+    width: max-content;
+    padding: 30px 10px 20px 10px;
+    /* margin-top: 100px;
+    margin-left: 700px; */
+    margin-top: 50px;
+    margin-right: 250px;
+    
+}
+.under{
+    text-decoration: underline;
+}
+.five{
+    display: flex;
+    flex-flow:  column wrap;
+    border: 6px solid darkgray;
+    background-color:rgb(90, 203, 160);
+    font-size: large;
+    text-transform: uppercase;
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 300px;
+    margin-right: 200px;
+    
+}
+.foot2{
+    display: flex;
+    border: 5px solid red;
+    font-size: xx-large;
+
+    /* text-align:center; */
+    font-style: italic;
+    /* height: fit-content; */
+    /* padding: 30px 60px 50px 120px; */
+    /* margin-top: 30px;
+    margin-left: -150px; */
+    width: 500px;
+    height: 70px;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 450px;
+    margin-top: 50px; */
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}  
+.foot3{
+    display: flex;
+    flex-flow: wrap;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+.six{
+    display: flex;
+    flex-flow: column;
+    border: 4px solid green;
+    background-color: aqua;
+    margin: 10px;
+    font-size:22px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 30px;
+}
+.seven{
+    display: flex;
+    flex-flow: column;
+    border: 4px solid green;
+    background-color: aqua;
+    font-size:22px;
+    margin: 10px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 30px;
+}
+.eight{
+    display: flex;
+    flex-flow: column;
+    border: 4px solid green;
+    background-color: aqua;
+    font-size:22px;
+    margin: 10px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 30px;
+}
+.nine{
+    display: flex;
+    flex-flow: column;
+    border: 4px solid green;
+    background-color: aqua;
+    font-size:22px;
+    margin: 10px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 30px;
+}
+.ten{
+    display: flex;
+    flex-flow: column;
+    border: 4px solid green;
+    background-color: aqua;
+    font-size:22px;
+    margin: 10px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 30px;
+}
+.eleven{
+    display: flex;
+    flex-flow: column;
+    border: 4px solid green;
+    background-color: aqua;
+    font-size:22px;
+    margin: 10px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 30px;
+}
+.twelve{
+    display: flex;
+    flex-flow: column;
+    border: 4px solid green;
+    background-color: aqua;
+    font-size:22px;
+    margin: 10px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 30px;
+}
