@@ -13,7 +13,7 @@ body{
     border-radius: 12px;
     font-weight: 700;
     text-shadow: 1.2px 1.2px rgb(145 37 59);
-    box-shadow: 5px 5px 2px purple;
+    box-shadow: 10px 10px 2px purple;
     font-size: 22px;
 }
 .div2 {
@@ -38,7 +38,7 @@ body{
     border: 5px solid red;
     border-radius: 12px;
     font-weight: 650;
-    box-shadow: 5px 5px 2px purple;
+    box-shadow: 10px 10px 2px purple;
     font-size: 22px;
     margin: 20px;
 }
@@ -54,7 +54,7 @@ body{
     justify-content: space-between;
     border: 5px solid red;
     border-radius: 12px;
-    box-shadow: 5px 5px 2px purple;
+    box-shadow: 10px 10px 2px purple;
     background-color: yellowgreen;
     left: 33%;
     top: 85vh;
