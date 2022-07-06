@@ -44,7 +44,7 @@ body {
     font-weight: 500;
   }
   
-  .para {
+  .para{
     background-color: #5ae59b;
     border: 2px solid orangered;
     border-radius: 20px;
@@ -53,7 +53,7 @@ body {
     justify-content: space-around;
   }
   
-  .para p {
+  p {
     margin: 0;
     padding: 3px;
     width: 400px;
