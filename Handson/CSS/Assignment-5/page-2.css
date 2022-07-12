@@ -1,0 +1,42 @@
+body{
+    background-color: yellow;
+}
+.whole{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.body2{
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 40vw;
+    gap: 60px;
+}
+.fig1{
+    width: 90px;
+    height: 90px;
+    background-color: green;
+}
+.ani1{
+    transition: all 4s linear;
+}
+.ani1:hover{
+    width: 500px;
+}
+.ani2{
+    transition: all 4s linear;
+}
+.ani2:hover{
+    width: 300px;
+    height: 300px;
+}
+a{
+    margin-left: 44vw;
+    font-size: 30px;
+}
+
+
