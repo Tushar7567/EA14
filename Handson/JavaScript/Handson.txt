@@ -1,0 +1,45 @@
+Topics done today:
+        - declaration (3 types)
+            - var
+            - let
+            - const
+        - hiosting in JS
+    
+data-types :
+        int --> 11, 32, 4 
+         
+         float 12.5
+    
+        string --> "Cgbro"
+    
+         objects
+
+        booleans: true and false
+    
+        array --> [ 43, 61, 84] 
+    
+    
+note : everything in javascript is getting converted into objects
+
+        1. DECELARATIONS
+    
+        3 types: let, const and var
+    
+        1. var --> variable
+    
+        var a=12;
+    
+hiosting in JS
+
+hoisting is a default feature in JS than automatically pushes the function deleclaration at top so that it gets excuted before invocation
+        trex();
+    console.log(q);
+
+    var q=10;
+
+    function cgb() {
+        console.log("Hello world");
+    }
+
+    
+    cgb();
