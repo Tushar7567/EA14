@@ -6,17 +6,17 @@ Topics done today:
         - hiosting in JS
     
 data-types :
-        int --> 11, 32, 4 
+        int --> 1, 2, 3 
          
-         float 12.5
+         float 6.5
     
-        string --> "Cgbro"
+        string --> "go"
     
          objects
 
         booleans: true and false
     
-        array --> [ 43, 61, 84] 
+        array --> [ 40, 55] 
     
     
 note : everything in javascript is getting converted into objects
