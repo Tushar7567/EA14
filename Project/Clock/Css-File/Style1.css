@@ -4,7 +4,6 @@
 
 }
 
-/* Layout proporties */
 .whole {
     display: flex;
     justify-content: center;
@@ -30,7 +29,7 @@
     left: 124px;
     width: 204px;
     height: 77px;
-    background: transparent url('../Images/clock_logo.png') 0% 0% no-repeat padding-box;
+    background: transparent url('../Images/clock_logo.png');
     opacity: 1;
 }
 
@@ -43,7 +42,6 @@
     display: flex;
     flex-direction: column;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    /* border: 1px solid #EDEDED; */
     border-radius: 10px;
     opacity: 1;
 }
@@ -233,7 +231,7 @@ color: #3D087B;
     width: 536px;
     height: 118px;
     margin-top: 26px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     border: 1px solid #EDEDED;
     border-radius: 10px;
     opacity: 1;
@@ -255,7 +253,7 @@ color: #3D087B;
     left: 707px;
     width: 536px;
     height: 341px;
-    background: transparent url('../Images/Component\ 30\ –\ 1.svg') 0% 0% no-repeat padding-box;
+    background: transparent url('../Images/Component\ 30\ –\ 1.svg');
     background-size: cover;
     opacity: 1;
 
