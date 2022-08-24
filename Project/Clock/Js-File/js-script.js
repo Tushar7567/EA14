@@ -68,7 +68,9 @@ const ge2 = "GOOD EVENING !!";
 const gn1 = "CLOSE YOUR EYES AND GO TO SLEEP";
 const gn2 = "GOOD NIGHT !!";
 
-if (ampm === "AM" && (hour >= 8 && hour <= 11)) {
+let hrs = hour.innerText;
+let ap = ampm.innerText;
+if (ap == "AM" && (hrs >= 8 && hrs <= 11)) {
     let change = document.getElementsByClassName("text3");
     change[0].innerText = gm1;
     let pic1 = document.querySelector(".seven");
@@ -76,7 +78,7 @@ if (ampm === "AM" && (hour >= 8 && hour <= 11)) {
     change2.innerText = gm2;
     console.log("8");
 }
-else if (ampm === "PM" && (hour >= 12 && hour <= 3)) {
+else if (ap == "PM" && (hrs >= 12 && hrs <= 3)) {
     let change = document.getElementsByClassName("text3");
     change[0].innerText = ga1;
     let pic1 = document.querySelector(".seven");
@@ -85,7 +87,7 @@ else if (ampm === "PM" && (hour >= 12 && hour <= 3)) {
     change2.innerText = ga2;
     console.log("12");
 }
-else if (ampm === "PM" && (hour >= 4 && hour <= 7)) {
+else if (ap == "PM" && (hrs >= 4 && hrs <= 7)) {
     let change = document.getElementsByClassName("text3");
     change[0].innerText = ge1;
     let pic1 = document.querySelector(".seven");
