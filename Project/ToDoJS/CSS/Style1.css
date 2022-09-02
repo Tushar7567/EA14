@@ -1,0 +1,176 @@
+*{
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.superParent{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+/* Tasklist div */
+.headingLine{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    /* margin-top: 50px; */
+    padding: 0 30px;
+    border: 2px solid white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px; /* TaskList text */
+}
+
+/* body of Landing Page */
+.BodyParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    row-gap: 30px;
+    border: 1px solid white;
+
+}
+/* 1260px */
+/* Default text (No Item In ToDO List) */
+.BodyParent span{
+    font-size: 30px;
+    margin: 20px 50px;
+}
+
+/* Body Items */
+.BodyParent .Items{
+    width: 280px;
+    height: 380px;
+    position:relative;
+    padding: 10px 5px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    /* display: none; */
+
+}
+
+/* when + icon is clicked */
+.superParent#blur-1.active{
+    filter: blur(5px);
+    /* height: 100%; */
+}
+#blur_2.active_2{
+    filter: blur(5px);
+
+}
+
+/* Main PopUp  */
+/* when popup is inactives */
+.MainPopup, .POPUP{
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    position: fixed;
+    left: 17%;
+    top: 15%;
+    z-index: 1;
+    display: none;
+    /* visibility: hidden; */
+    transform: translate(50%,50%);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+/* when popup is active */
+.MainPopup.active, .POPUP.active_2{ 
+    display: inline-flex;
+    /* visibility: visible; */
+    opacity: 1;
+    transition: 0.5s;
+
+}
+.divText{
+    font-size: 28px;
+    margin: 10px 0;
+}
+.inputText{
+    color: black;
+    width: 280px;
+    height: 30px;
+}
+.divAnchor{
+    display: flex;
+    justify-content: space-evenly;
+    width: 280px;
+    height: 40px;
+}
+.arc{
+    background-color: orangered;
+    color: white !important;
+    width: 90px;
+    font-size: 30px !important;
+    border-radius: 20px;
+    text-align: center;
+    cursor:pointer !important;
+}
+
+
+/* card items contain(text that appear in cards)  */
+.it{
+    font-size: 20px !important;
+    color: black;
+}
+.done{
+    font-size: 12px;
+    color: white;
+    border: 1.5px solid black ;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+
+/* common used class */
+.textColorOnWhite{
+    color: black;
+}
+.anchor{
+    text-decoration: none;
+    font-size: 30px !important; 
+    color: orange;
+    cursor:pointer !important;
+
+}
+#text{
+    text-decoration: none;
+    display: block;
+}
+.title{
+    font-size: 27px;
+    margin: 0;
+    color: rgb(177, 22, 177);
+    text-align: center;
+}
+.pos1{
+    position:absolute;
+    /* top: 284px; */
+    /* left: 236px; */
+    bottom: 0;
+    right: 0;
+}
+.pos2{
+    position: absolute;
+    /* top: 284px; */
+    /* left: 173px; */
+    bottom: 0;
+    right: 30px;
+}
