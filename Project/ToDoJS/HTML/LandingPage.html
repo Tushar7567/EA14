@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Style1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+<div id="blur_2">
+    <div class="superParent" id="blur-1">
+        <div class="headingLine">
+            <div class="adText">
+                <span> <b>Task</b> List</span>
+            </div>
+            <div id="magic_1" style="display: none;">
+                <a href="#" onclick="backToNormal(this.parentElement)" class="material-icons anchor">
+                arrow_back
+                </a>
+                <span>Go Back</span>
+            </div>
+            <span id="magic_2" style="font-size: 27px; display: none;">dlkndf</span>
+            <div class="plus">
+                <a href="#" onclick="toggle()" class="material-icons anchor">
+                    add_circle
+                </a>
+                <span>Add Item</span>
+            </div>
+        </div>
+        <div class="BodyParent">
+            <span class="noItems">No Items in ToDo List </span>
+            <!-- <div class="Items">
+                <p id="text" class="title textColorOnWhite">My Todo List </p>
+                <hr>
+                <a href="" id="plusIcon" class=" material-icons anchor pos1">
+                    add_circle
+                </a>
+                <a href="" id="trashIcon" class=" material-icons anchor pos2">
+                    delete
+                </a>
+            </div> -->
+            
+        </div>
+    </div>
+
+</div>
+<div class="MainPopup" id="popup">
+    <p class="divText textColorOnWhite">
+        Add New List
+    </p>
+    <div>
+        <input type="text" id="todo" class="inputText" autocomplete="off" placeholder="Enter your todo list" >
+    </div>
+    <div class="divAnchor">
+       <a id="add" href="#" class="textColorOnWhite anchor arc" onclick="addCards()">Add  </a>
+       <a href="#" onclick="toggle()" class="textColorOnWhite anchor arc">Close</a>
+    </div>
+</div>
+<div class="POPUP" id="secPopup">
+    <p class="divText textColorOnWhite">
+        Add New Item
+    </p>
+    <div>
+        <input type="text" id="todo_2" class="inputText" autocomplete="off" placeholder="Enter your todo items" >
+    </div>
+    <div class="divAnchor">
+       <a id="add" href="#" class="textColorOnWhite anchor arc" onclick="addItem()">Add  </a>
+       <a href="#" onclick="toggle_2()" class="textColorOnWhite anchor arc">Close</a>
+    </div>
+</div>
+    <script src="../JS/Functionality.js"></script>
+</body>
+</html>
