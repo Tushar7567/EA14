@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 /* Tasklist div */
@@ -21,7 +21,7 @@ body{
     height: 55px;
     /* margin-top: 50px; */
     padding: 0 30px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     justify-content: space-between;
     align-items: center;
     font-size: 30px; /* TaskList text */
@@ -35,7 +35,7 @@ body{
     width: 100%;
     height: auto;
     row-gap: 30px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
 }
 /* 1260px */
