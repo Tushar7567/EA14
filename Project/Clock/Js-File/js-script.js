@@ -19,7 +19,7 @@ let hour = document.querySelector("#Hours");
 let Mins = document.querySelector("#Min");
 let Secs = document.querySelector("#Sec");
 let ampm = document.querySelector("#AmPm");
-console.log(ampm.innerText);
+console.log(hour.innerText);
 
 function settime() {
     let date = new Date();
@@ -27,10 +27,14 @@ function settime() {
     let mins = date.getMinutes();
     let sec = date.getSeconds();
     // console.log(hrs+":"+mins+":"+sec);
-    if (hrs > 12) {
-        if((hrs - 12) < 10){hour.innerText = `0${hrs - 12}`;}
+    if (hrs > 12) {        
+        if((hrs - 12) < 10){hour.innerText = `0${hrs-12}`;}
         else{hour.innerText = hrs;}
-    } else { hour.innerText = `0${hrs - 12}`; }
+    } else{
+        if(hrs == 12){ hour.innerText = `12`; }
+
+        else{ hour.innerText = `0${hrs - 12}`; }
+    }
 
     if (mins < 10) {
         Mins.innerText = `0${mins}`;
@@ -47,6 +51,7 @@ function settime() {
     } else {
         ampm.innerText = "AM";
     }
+
     setTimeout(function () {
         settime();
     }, 1000);
