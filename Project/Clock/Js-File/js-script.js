@@ -21,17 +21,18 @@ let Secs = document.querySelector("#Sec");
 let ampm = document.querySelector("#AmPm");
 console.log(hour.innerText);
 
+
 function settime() {
     let date = new Date();
     let hrs = date.getHours();
     let mins = date.getMinutes();
     let sec = date.getSeconds();
-    // console.log(hrs+":"+mins+":"+sec);
+    // console.log(hrs);
     if (hrs > 12) {        
         if((hrs - 12) < 10){hour.innerText = `0${hrs-12}`;}
         else{hour.innerText = hrs;}
     } else{
-        if(hrs == 12){ hour.innerText = `12`; }
+        if( hrs == 12){ hour.innerText = `12`; }
 
         else{ hour.innerText = `0${hrs - 12}`; }
     }
@@ -52,12 +53,15 @@ function settime() {
         ampm.innerText = "AM";
     }
 
+    // if(hour.innerText == 6 || hour.innerText == 12 || hour.innerText == 4 || hour.innerText == 8 || hour.innerText == 1){
+    //     setMessage();
+    // }
+
     setTimeout(function () {
         settime();
     }, 1000);
 }
 settime();
-
 
 // Changing message & image according to time
 
@@ -73,43 +77,115 @@ const ge2 = "GOOD EVENING !!";
 const gn1 = "CLOSE YOUR EYES AND GO TO SLEEP";
 const gn2 = "GOOD NIGHT !!";
 
+
 let hrs = hour.innerText;
 let ap = ampm.innerText;
-if (ap == "AM" && (hrs >= 8 && hrs <= 11)) {
-    let change = document.getElementsByClassName("text3");
-    change[0].innerText = gm1;
-    let pic1 = document.querySelector(".seven");
-    pic1.style.background = "transparent url('../Images/Component\ 30\ –\ 1.svg')";
-    change2.innerText = gm2;
-    console.log("8");
+
+function setMessage(){
+    if(ap == "AM"){
+        if(hrs >= 6 && hrs <= 11){
+            let change = document.getElementsByClassName("text3");
+            change[0].innerText = gm1;
+            let pic1 = document.querySelector(".seven");
+            pic1.style.background = "transparent url('../Images/Component\ 30\ –\ 1.svg')";
+            let change2 = document.querySelector(".text0");
+            change2.innerText = gm2;
+            console.log("morning");
+        }
+        else{
+            let change = document.getElementsByClassName("text3");
+            change[0].innerText = gn1;   
+            let pic1 = document.querySelector(".seven");
+            pic1.style.background = "transparent url('../Images/Component\ 32\ –\ 1.svg')";
+            let change2 = document.querySelector(".text0");
+            change2.innerText = gn2;
+            console.log("8-pm");
+        }
+    
+    }
+    else{
+        if ( hrs <= 3) {
+            let change = document.getElementsByClassName("text3");
+            change[0].innerText = ga1;
+            let pic1 = document.querySelector(".seven");
+            pic1.style.background = "transparent url('../Images/Component\ 31\ –\ 1.svg')";
+            let change2 = document.querySelector(".text0");
+            change2.innerText = ga2;
+            console.log("12");
+        }
+        else if (hrs >= 4 && hrs <= 7) {
+            let change = document.getElementsByClassName("text3");
+            change[0].innerText = ge1;
+            let pic1 = document.querySelector(".seven");
+            pic1.style.background = "transparent url('../Images/lunch_image/lunch_image.png')";
+            let change2 = document.querySelector(".text0");
+            change2.innerText = ge2;
+            console.log("4");
+        }
+        else {
+            let change = document.getElementsByClassName("text3");
+            change[0].innerText = gn1;   
+            let pic1 = document.querySelector(".seven");
+            pic1.style.background = "transparent url('../Images/Component\ 32\ –\ 1.svg')";
+            let change2 = document.querySelector(".text0");
+            change2.innerText = gn2;
+            console.log("8-pm");
+        }
+    }
+    
 }
-else if (ap == "PM" && (hrs >= 12 && hrs <= 3)) {
-    let change = document.getElementsByClassName("text3");
-    change[0].innerText = ga1;
-    let pic1 = document.querySelector(".seven");
-    pic1.style.background = "transparent url('../Images/Component\ 31\ –\ 1.svg')";
-    let change2 = document.querySelector(".text0");
-    change2.innerText = ga2;
-    console.log("12");
-}
-else if (ap == "PM" && (hrs >= 4 && hrs <= 7)) {
-    let change = document.getElementsByClassName("text3");
-    change[0].innerText = ge1;
-    let pic1 = document.querySelector(".seven");
-    pic1.style.background = "transparent url('../Images/lunch_image/lunch_image.png')";
-    let change2 = document.querySelector(".text0");
-    change2.innerText = ge2;
-    console.log("4");
-}
-else{
-    let change = document.getElementsByClassName("text3");
-    change[0].innerText = gn1;   
-    let pic1 = document.querySelector(".seven");
-    pic1.style.background = "transparent url('../Images/Component\ 32\ –\ 1.svg')";
-    let change2 = document.querySelector(".text0");
-    change2.innerText = gn2;
-    console.log("8-pm");
-}
+
+setMessage();
+
+
+
+
+// if (ap == "AM" && (hrs >= 6 && hrs <= 11)) {
+//     let change = document.getElementsByClassName("text3");
+//     change[0].innerText = gm1;
+//     let pic1 = document.querySelector(".seven");
+//     pic1.style.background = "transparent url('../Images/Component\ 30\ –\ 1.svg')";
+//     change2.innerText = gm2;
+//     console.log("8");
+// }
+// else if (ap == "PM" && (hrs >= 12 && hrs <= 3)) {
+//     let change = document.getElementsByClassName("text3");
+//     change[0].innerText = ga1;
+//     let pic1 = document.querySelector(".seven");
+//     pic1.style.background = "transparent url('../Images/Component\ 31\ –\ 1.svg')";
+//     let change2 = document.querySelector(".text0");
+//     change2.innerText = ga2;
+//     console.log("12");
+// }
+// else if (ap == "PM" && (hrs >= 4 && hrs <= 7)) {
+//     let change = document.getElementsByClassName("text3");
+//     change[0].innerText = ge1;
+//     let pic1 = document.querySelector(".seven");
+//     pic1.style.background = "transparent url('../Images/lunch_image/lunch_image.png')";
+//     let change2 = document.querySelector(".text0");
+//     change2.innerText = ge2;
+//     console.log("4");
+// }
+// else {
+//     let change = document.getElementsByClassName("text3");
+//     change[0].innerText = gn1;   
+//     let pic1 = document.querySelector(".seven");
+//     pic1.style.background = "transparent url('../Images/Component\ 32\ –\ 1.svg')";
+//     let change2 = document.querySelector(".text0");
+//     change2.innerText = gn2;
+//     console.log("8-pm");
+// }
+
+// (ap == "PM" && hrs >= 8 || ap == "AM" && (hrs >= 0 && hrs < 6))
+// else{
+//     let change = document.getElementsByClassName("text3");
+//     change[0].innerText = gn1;   
+//     let pic1 = document.querySelector(".seven");
+//     pic1.style.background = "transparent url('../Images/Component\ 32\ –\ 1.svg')";
+//     let change2 = document.querySelector(".text0");
+//     change2.innerText = gn2;
+//     console.log("1-am");
+// }
 
 // ((ampm === "PM" && hour >= 8) || (ampm === "AM" && hour <= 7))
 function setAlarm() {
